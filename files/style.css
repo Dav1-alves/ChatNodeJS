@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&family=Quicksand:wght@300;500;700&display=swap');
+
+:root {
+    --shadow-header-color: #eeeeee;
+    --color-global-light: #5b5b5b;
+    --not-working: #bcbcbc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-global-light);
+
+    list-style: none;
+    text-decoration: none;
+}
+
+#sucess {
+    position: fixed;
+    top: 7%;
+    right: -40%;
+    transition: 250ms;
+}
+
+#sucess.active {
+    position: fixed;
+    right: 0%;
+    z-index: 999;
+
+    width: 240px;
+    height: 75px;
+    
+    background: rgba(28, 174, 28, 0.536);
+    border-left: 3px solid rgb(9, 142, 0);
+    backdrop-filter: blur(100px);
+    padding: 10px 25px;
+}
+
+#sucess strong, p {
+    color: white;
+}
+
+#sucess strong {
+    font-size: 1.2em;
+}
+
+#sucess p {
+    padding: 3px 0px;
+    font-size: 0.9em;
+}
+
+header {
+    box-shadow: 0px 0px 10px 2px var(--shadow-header-color);
+    padding: 15px 15px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .server_NOW,
+.options_PROFILE {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header button {
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 0px 5px;
+
+    background: 0;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header .server_NOW a {
+    position: relative;
+}
+
+header .server_NOW a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    background: var(--color-global-light);
+    width: 100%;
+    height: 1px;
+}
+
+.serve_ALL {
+    position: fixed;
+    left: -80%;
+    top: 0;
+
+    width: 275px;
+    height: 100%;
+
+    box-shadow: 0px 0px 5px 2px #bcbcbc17;
+    background: white;
+    
+    z-index: 999;
+    
+    /* Temporareo */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serve_ALL strong {
+    color: var(--not-working);
+    font-weight: 400;
+}
+
+/* form_MESSAGE */
+
+#form_MESSAGE, #form_MESSAGE .inputs, #form_MESSAGE .options_MESSAGE {
+    display: flex;
+    align-items: center;
+}
+
+#form_MESSAGE {
+    position: fixed;
+    bottom: 0;
+    
+    justify-content: space-between;
+    
+    width: 100%;
+    z-index: 999;
+    padding: 30px 15px;
+}
+
+#form_MESSAGE .inputs {
+    width: 100%;
+}
+
+#form_MESSAGE .inputs .voice, #form_MESSAGE .options_MESSAGE .btn_FIGURE {
+    padding: 15px 15px;
+    border: 1px solid var(--color-global-light);
+    margin: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+
+    z-index: 999;
+}
+
+#form_MESSAGE button {
+    padding: 16px 23px;
+    border: 0px;
+    border-radius: 5px;
+    background: #829bb1;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+#form_MESSAGE button i {
+    color: white;
+}
+
+#form_MESSAGE .inputs .voice i, #form_MESSAGE .options_MESSAGE .btn_FIGURE i {
+    font-size: 1.2em;
+}
+
+#form_MESSAGE input[type=text] {
+    padding: 15px;
+    border: 1px solid var(--color-global-light);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+/* FIGURE */
+
+#group_FIGURE {
+    display: none;
+    flex-wrap: wrap;
+
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    
+    width: 100%;
+    height: 335px;
+
+    padding: 25px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.695);
+    box-shadow: 0px 0px 5px 3px #829bb114;
+
+    overflow: auto;
+    z-index: 999;
+}
+
+.card_FIGURE {
+    width: 100px;
+    height: 100px;
+    
+    margin: 10px 12.2px;
+    border: 0;
+}
+
+.card_FIGURE img {
+    width: 100%;
+}
+
+
+/* CHAT */
+
+.no_msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 400;
+    color: #5b5b5b4b;
+
+    z-index: -999;
+}
+
+/* Add USER */
+
+#ENTER_username {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    z-index: 999;
+}
+
+#chat {
+    width: 100%;
+    height: calc(100vh - 255px);
+
+    padding: 15px 30px;
+    margin: 65px 0px;
+
+    z-index: -999;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    #chat {
+        height: calc(100vh - 185px);
+    }
+}
+
+.MY_message {
+    padding: 0px 10px;
+    text-align: end;
+    margin-left: auto;
+    background: #829bb1;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.MY_message .name, .text {
+    color: white;
+}
+
+.MY_message .name {
+    color: white;
+    font-size: 0.8em;
+}
+
+.OTHER_message {
+    padding: 0px 10px;
+    text-align: start;
+    margin-right: auto;
+    background: #232323;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.UPDATE_message {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0px;
+
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.update_TEXT {
+    color: #bcbcbc;
+}
+
+.MY_message.MY_FIG, .OTHER_message.MY_FIG {
+    background: 0!important;
+}
+
+.MY_message.MY_FIG .update .image img, .OTHER_message.MY_FIG .update .image img {
+    width: 150px;
+    height: 150px;
+}
+
+.MY_message.MY_FIG .update .name, .OTHER_message.MY_FIG .update .name {
+    color: #bcbcbc;
+    margin-bottom: 15px;
+}

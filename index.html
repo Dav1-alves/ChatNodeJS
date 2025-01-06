@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SUCESS FULL -->
+
+    <div id="sucess" class="">
+        <strong></strong>
+        <p></p>
+    </div>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="server_NOW">
+            <button>
+                <i class='bx bx-menu-alt-left'></i>
+            </button>
+
+            <a href="">
+                # Global 🌎
+            </a>
+        </div>
+
+        <div class="options_PROFILE">
+            <button id="copy" onclick="copyURL()">
+                <i class='bx bx-group'></i>
+            </button>
+            <button>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- List SERVER -->
+
+    <div class="serve_ALL">
+        <strong>
+            Not working...
+        </strong>
+    </div>
+
+    <!-- MESSAGE -->
+
+    <div id="form_MESSAGE">
+        <div class="inputs">
+            <div class="voice">
+                <i class='bx bx-microphone'></i>
+            </div>
+            <input type="text" id="message" placeholder="Digite sua mensagem..." autocomplete="off">
+        </div>
+        <div class="options_MESSAGE">
+            <div class="btn_FIGURE">
+                <i class='bx bx-happy-heart-eyes'></i>
+            </div>
+            <button class="send">
+                <i class='bx bx-send'></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- GROUP FIGURE -->
+
+    <div id="group_FIGURE">
+        <button class="card_FIGURE">
+            <!-- Image -->
+            <img src="https://i.pinimg.com/150x150/a9/12/ec/a912ec98490aa9f857bdd65a279b6520.jpg" alt="">
+        </button>
+        
+    </div>
+
+    <div id="chat">
+        <strong class="no_msg">Sem mensagem</strong>
+    </div>
+
+    <div id="ENTER_username">
+        <form action="" id="ADD_USER">
+            <input type="text" id="name">
+            <button>SEND</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
