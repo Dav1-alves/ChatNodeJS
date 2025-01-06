@@ -1,2 +1,2 @@
 # ChatNodeJS
-Projeto antigo e nunca publicado, mas funciona.
+Projeto antigo, simples e nunca publicado, mas funciona.
